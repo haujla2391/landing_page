@@ -1,9 +1,21 @@
 body{
     display: flex;
     flex-direction: column;
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    color: #f9faf8;
+    padding: 10px 15vw;
+    font-weight: 900;
+}
+
+.header ul{
+    font-weight: 300;
 }
 
 a{
@@ -22,26 +34,33 @@ ul{
 
 button{
     background-color: #3882F6;
-    color: white;
+    color: #F9FAF8;
+    padding: 8px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
     border: none;
-    border-radius: 3px;
-    padding: 4px 10px;
-    cursor: pointer;
+    align-self: flex-start;
 }
 
-.header{
+.content1{
     display: flex;
     justify-content: space-between;
-    font-size: 24px;
-    color: #f9faf8;
-    padding: 10px;
-    margin-bottom: 75px;
+    align-items: center;
+    padding: 15vh 15vw;
+    gap: 40px;
 }
 
 .description{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 65vh;
+    gap: 8px;
+}
+
+.description_text{
     font-size: 48px;
     font-weight: bolder;
-    color: #f9faf8;
 }
 
 .smaller_description{
@@ -57,29 +76,81 @@ button{
     padding: 20px;
 }
 
-.quote{
-    background-color: #E5E7EB;
-}
-
-.content1{
-    display: flex;
-    align-items: center;
-}
-
 .content2 img{
     width: 200px;
     height: auto;
 }
 
 .content2{
-    font-size: 36px;
-    font-weight: bolder;
-    color: #1F2937;
+    padding-bottom: 15vh;
+    gap: 20px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
-.images_descriptions{
+.info-heading{
+    font-size: 36px;
+    font-weight: 800;
+    padding: 5vh;
+}
+
+.content2 ul {
     display: flex;
+    gap: 60px;
     justify-content: center;
+}
+
+.info-subtext {
+    width: 160px;
+    text-align: center;
+}
+
+.info > ul > li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.quote{
+    background-color: #E5E7EB;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+    color: #1F2937;
+    padding: 100px;
+}
+
+.author{
+    font-weight: bold;
+    text-align: right;
+}
+
+.call_to_action{
+    padding: 100px;
+}
+
+.callbox{
+    background-color: #3882F6;
+    padding: 25px 50px;
+    color: #f9faf8;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+.smaller_description2{
+    font-size: 14px;
+    color: #E5E7EB;
+    font-weight: 300;
+}
+
+.callbox button{
+    border: 2px solid transparent;
+    border-color: #f9faf8;
+}
+
+.footer{
+    text-align: center;
 }
